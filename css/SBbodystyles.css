@@ -1,0 +1,194 @@
+:root{
+    --secondFont:'Quicksand', sans-serif;
+    --colorWhite: #FFFFFF;
+    --colorBlack:#000000;
+    --primaryColor:#FECE00;
+    --secondaryColor:#F5DA81;
+    --ingredientsBG:#957900;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    background: var(--colorBlack);
+}
+/*---MENU-BAR---*/
+.nav-menu{
+    height: 66px;
+}
+.nav-menu_bar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin: 0;
+    padding-left: 28px;
+    padding-top: 12px;
+}
+.nav-menu_bar li{
+    list-style: none;
+}
+.nav-menu_bar li a{
+    text-decoration: none;
+}
+.nav-menu_bar li a img{
+    width: 36px;
+}
+/*---SCROLL PRODUCTS PROMO---*/
+.promo-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:12px;
+    background: url("../img/patternBackground.jpg") repeat-x fixed;
+    border-bottom-left-radius: 124px;
+    border-top-left-radius: 180px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.promo-container-card{
+    width: 90%;
+    margin-top: 36px;
+    margin-bottom: 24px;
+    margin-left: 8px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background: rgba(255,255,255,0.36);
+    border-bottom-right-radius: 120px;
+    border-top-left-radius: 132px;
+    border-bottom-left-radius: 132px;
+    scroll-snap-align: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.42);
+}
+.promo-container-card__images{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.promo-container-card__images h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--colorBlack);
+    margin: 0;
+    margin-bottom: -92px;
+    width: 128px;
+}
+.promo-container-card__images .card-tittle{
+    width: 204px;
+    margin-top: -104px;
+    padding-left: 8px;
+}
+.promo-container-card__images .card-product{
+    width: 200px;
+    padding-left: 132px;
+}
+/*---SCROLL PROMO PACKS---*/
+.promo-pack-container{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 12px;
+    padding-left: 8px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.promo-pack_card{
+    display: flex;
+    width: 90%;
+    padding: 8px;
+    padding-right: 24px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.5);
+    scroll-snap-align: center;
+}
+.promo-pack_card img{
+    width:200px;
+}
+.promo-pack_card__list{
+    color: var(--colorWhite);
+    list-style: none;
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+.promo-pack_card__list{
+    font-size: 20px;
+}
+.promo-pack_card h3{
+    margin: 0;
+    font-size: 36px;
+    color: var(--primaryColor);
+    margin-left: -56px;
+    margin-top: 63px;
+}
+/*---Slogan Slide----*/
+.slogan-slider{
+    background: black;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    width: auto;
+}
+.slogan-slide-track{
+    display: flex;
+    align-items: center;
+    background: url("../Slogan/Lines_Separation.png");
+    overflow-x: scroll;
+    width: calc(200px*16);
+}
+.slide{
+    width: 150px;
+    background: rgba(59, 54, 3, 0.22);
+}
+.slide img{
+    width: 100%;
+}
+/*--- MENU SELECTOR CONTAINER ---*/
+.selector-container{
+    display: grid;
+    background: var(--primaryColor);
+    background: url("../img/patternBackground.jpg") fixed;
+    justify-content: center;
+    padding-top: 36px;
+}
+.selector-container img{
+    width: 300px;
+}
+.selector-container__box-icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+    padding: 29.5px;
+    background: rgba(255,255,255,0.36);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.selector-container__icons{
+    padding: 8px;
+    background: rgba(255,255,255,0.38);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.42);
+}
+.selector-container__icons:hover{
+    background:rgba(255,255,255,0.6);
+}
+.selector-container__icons img{
+    width: 50px;
+}
+.selector-container__icons:first-child{
+    padding-top: 20px;
+}
+.selector-container__icons:first-child img{
+    width: 60px;
+}
+.selector-container__icons:nth-child(2n){
+    padding-left: 12px;
+}
+.selector-container__icons:nth-child(2n) img{
+    width: 44px;
+}

@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    display: flex;    
+}
+.container .logo{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+.logo img{
+    width: 500px;
+}
+.form-Container{
+    width: 28%;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    background:rgba(0, 0, 0, 0.8);
+    box-shadow: rgb(0, 0, 0) 0px 8px 36px;
+}
+.slogan{
+    width: 80%;
+    margin-top: 32px;
+}
+.form{
+    width: 48%;
+}
