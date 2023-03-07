@@ -149,8 +149,7 @@ body{
 }
 /*--- MENU SELECTOR CONTAINER ---*/
 .selector-container{
-    display: grid;
-    background: var(--primaryColor);
+    display: flex;
     background: url("../img/patternBackground.jpg") fixed;
     justify-content: center;
     padding-top: 36px;
@@ -159,8 +158,10 @@ body{
     width: 300px;
 }
 .selector-container__box-icons{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+/*    display: grid;
+    grid-template-columns: repeat(3,1fr);*/
+    display: flex;
+    justify-content: center;
     gap: 28px;
     padding: 29.5px;
     background: rgba(255,255,255,0.36);
@@ -168,6 +169,8 @@ body{
     border-top-right-radius: 8px;
 }
 .selector-container__icons{
+    display: flex;
+    justify-content: center;
     padding: 8px;
     background: rgba(255,255,255,0.38);
     border-radius: 8px;
@@ -177,18 +180,22 @@ body{
 .selector-container__icons:hover{
     background:rgba(255,255,255,0.6);
 }
+
 .selector-container__icons img{
     width: 50px;
 }
-.selector-container__icons:first-child{
-    padding-top: 20px;
-}
-.selector-container__icons:first-child img{
-    width: 60px;
-}
-.selector-container__icons:nth-child(2n){
-    padding-left: 12px;
-}
-.selector-container__icons:nth-child(2n) img{
-    width: 44px;
+/*--- MEDIA QUERYS 600PX ---*/
+@media(min-width:600px){
+    .selector-container{
+        border-top-right-radius: 152px;
+    }
+    .selector-container__box-icons{
+        width: 90%;
+        gap: 28px;
+        background: none;
+    }
+    .selector-container__icons{
+        width: 30%;
+        border-radius: 50px;
+    }   
 }
